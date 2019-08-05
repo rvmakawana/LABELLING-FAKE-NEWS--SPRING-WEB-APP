@@ -32,6 +32,7 @@ public class TruthController {
 	String update(HttpServletRequest request,@RequestParam("score") String score,@RequestParam("impac") String impac,@RequestParam("id") String id)
 	{
 		System.out.print("id is "+ id+"score is "+score);
+		System.out.print(b);
 	   Fake f1=tr.findById(Integer.parseInt(id));
 	   tr.setFakeInfoById(Integer.parseInt(score),Integer.parseInt(impac),Integer.parseInt(id));
          Fake fake=tr.findByScore();
